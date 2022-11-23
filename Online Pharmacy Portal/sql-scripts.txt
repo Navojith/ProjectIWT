@@ -1,0 +1,69 @@
+﻿
+Database Name = “Project IWT” 
+
+
+create table delivery_details(
+	DeliveryID int NOT NULL AUTO_INCREMENT ,
+	Delivery_name varchar(20),
+	Payment_type varchar(100),
+	Delivery_address varchar(50),
+	Zipcode int,
+	Delivery_city varchar(10),
+	constraint PK1  primary key (DeliveryID)
+);
+
+create table card_details(
+		DeliveryID int NULL AUTO_INCREMENT primary key, 
+		card_NOCname varchar(20),
+		card_number int(20),
+		card_EXPDate varchar(5),
+		card_cvv int
+		
+);
+
+create table feedback(
+	DeliveryID int NULL AUTO_INCREMENT primary key,
+	name varchar(20),
+	email varchar(100),
+	phone int,
+	feedback varchar(5000),
+	suggestions varchar(5000)
+	
+);
+
+
+CREATE TABLE products(
+	id int(255) NOT NULL AUTO_INCREMENT,
+	name varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT 	NULL,
+	price float NOT NULL,
+	quantity int(255) NOT NULL,
+	image varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT 	NULL,
+	PRIMARY KEY(id)
+);
+
+
+
+CREATE TABLE users (
+	ID int PRIMARY KEY AUTO_INCREMENT,
+	username varchar(254) UNIQUE NOT NULL,
+	email varchar(254) UNIQUE NOT NULL,
+	password varchar(254) NOT NULL,
+	firstName varchar(100) NOT NULL,
+	lastName varchar(100) NOT NULL,
+	contactNumber varchar(10),
+	street varchar(100),
+	city varchar(100),
+	country varchar(100)
+);
+
+
+
+CREATE TABLE profileImg (
+	userID int PRIMARY KEY,
+	status int NOT NULL,
+	location varchar(254)
+);
+
+
+
+//Note : first user to register, becomes the Admin

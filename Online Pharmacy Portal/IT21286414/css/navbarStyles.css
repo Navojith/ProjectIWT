@@ -1,0 +1,95 @@
+#toptop {
+  margin: 0px 0px !important;
+  background-color: white !important;
+  position: relative !important;
+}
+
+.logobar{
+  margin: 0px 0px !important;
+  position: absolute !important;
+  left: 200px !important;
+  top: 0px !important;
+  font-size:25px !important;
+  font-weight: bold !important;
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+nav{
+  border: none;
+  z-index: 5;
+ 
+
+}
+.dropbtn {
+    border-radius: 0px;
+
+}
+.dropbtn ul {
+  border-radius: 0px ;
+    list-style-type: none;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(49, 51, 56);
+    
+  }
+  
+  .dropbtn  li {
+    float: left;
+  }
+  
+  .dropbtn  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all  0.5s ease 0s;
+  }
+  
+  .dropbtn  li a:hover:not(.active) {
+    
+    color: rgb(255, 255, 255);
+
+    transition: all  0.3s ease 0s;
+
+  }
+  
+  #navbar {
+
+    overflow: hidden;
+  
+  }
+  #navbar a {
+    font-family: 'Ubuntu', sans-serif;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  #navbar a:hover {
+    background-color:#4d79ff;
+    color: rgb(255, 252, 252);
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+
+
+.active {
+  background-color: #4d79ff;
+}
+
+#signinbtn:hover {
+  
+  background-color: #99b3ff !important;
+
+}

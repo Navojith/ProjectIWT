@@ -1,0 +1,146 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin:0px;
+   background-image: url("../images/bg3.jpg") ;
+}
+
+div.outter-container {
+    margin:auto;
+    padding:25px;
+    height:100vh;
+    display:flex;
+    float:none;
+    justify-content: center;
+}
+
+div.inner-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top:60px; 
+    padding:26px 60px;
+    display:inline-block;
+    float:none;
+    border-radius: 20px;
+
+}
+
+form input{
+    padding:10px;
+    margin:10px 0;
+    width:100%;
+}
+
+.submit-btn {
+    cursor: pointer;
+    width:100%;
+    background-image: linear-gradient(to bottom right, rgb(56, 59, 255), rgb(0, 119, 255));
+    color:white;
+    font-weight: bold;
+    border:0;
+    font-size: 1.2rem;
+    border-radius: 5px;
+
+}
+
+.reg-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+
+.forgotPassword {
+    width: 100%;
+    font-size: small;
+    text-align: right;
+}
+
+.forgotPassword a{
+    text-decoration: none;
+    color:grey;
+}
+
+.forgotPassword a:hover {
+    color:black;
+}
+
+.backToLogin {
+    width: 100%;
+    font-size: small;
+    text-align: center;
+}
+
+.switchBetweenLoginAndRegister a{
+    color:rgb(36, 50, 240)
+}
+
+.Name {
+    display: block
+}
+
+.accountDetailsTitle{
+   font-size: 1.2em;
+}
+
+.accountDetailsInput {
+    height: 20px;
+    width:100%;
+    margin: 0px;
+}
+
+/*password validation buble*/
+
+.pwd {
+    display: block;
+    position: relative;
+}
+
+
+.pwdValidation {
+  padding: 10px;
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 103%;
+  top: 8px;
+}
+
+.pwdValidation p {
+    color: red;
+  margin: 0px;
+  padding: 5px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+
+
+@media (min-width: 768px ) and (max-width: 991px) {
+   
+    #profileCardInner {
+    width:70%;
+    display: block;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    #profileCardInner {
+    width:100%;
+    display: block;
+    }
+}
+
+

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../image/pay2.jpg);
+   
+}
+.payment-from-style{
+    border: 3px solid #DC143C;
+    color: white;
+    display: inline-block;
+    background-color: black;
+    border-radius: 20px;
+
+}
+
+#box {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    color: #DC143C;
+}
+form{
+    
+    padding: 30px;
+    font-family: 'Koulen', cursive;
+}
+label{
+	
+	width:240px;
+	display:inline-block;
+    
+}
+button{
+    
+  background-color: #DC143C;
+  width : 150px;
+  height : 40px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+
+  border: none;
+  border-radius: 15px;
+  font-family: 'Koulen', cursive;
+}
