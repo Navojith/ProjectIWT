@@ -35,10 +35,6 @@ if(isset($_SESSION['userID']))
    {
       if($_SESSION['userID'] === 1)
       {
-        
-
-
-
 echo "<link rel='stylesheet' href='../IT21286414/css/navbarStyles.css'>
     <div id='toptop'>
       <img src='../IT21284984(Hompage Inside)/image/logo.png'>
@@ -70,8 +66,6 @@ echo "<link rel='stylesheet' href='../IT21286414/css/navbarStyles.css'>
     $select= "SELECT * FROM products";
 	$result = $conn->query($select);
 ?>	
-
-
 
 <div class="display-items">
       <table class="display-items-table">
@@ -116,7 +110,6 @@ else
    {
       header('location:../IT21286414/php/login.php');
       exit();
-
    }
    ?>
       </table>
